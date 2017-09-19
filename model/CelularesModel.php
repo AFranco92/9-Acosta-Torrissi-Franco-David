@@ -15,7 +15,12 @@
 
 		function setCelular(/*parametros*/) {
 			$sentencia = $this->db->prepare('INSERT INTO celular('/*parametros*/') VALUES('/*???*/')');
-		$sentencia->execute([/*parametros*/]);
+			$sentencia->execute([/*parametros*/]);
+		}
+
+		function updateCelular(/*parametros*/) {
+			$sentencia = $this->db->prepare('UPDATE /*parametros*/./*parametros*/ SET /*parametros*/ = ? WHERE /*parametros*/');
+			$sentencia->execute([/*parametros*/]);
 		}
 
 		function deleteCelular($id_celular) {

@@ -22,6 +22,10 @@
 			$this->view->ShowCreateCelulares();
 		}
 
+		public function edit() {
+			/*a completar*/
+		}
+
 		public function store() {
 			/*parametro*/ = $_POST[/*parametro*/];
 			/*parametro*/ = $_POST[/*parametro*/];
