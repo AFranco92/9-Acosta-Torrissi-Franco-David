@@ -3,7 +3,9 @@
 	include_once 'view/CelularesView.php';
 	include_once 'controller/CelularesController.php';
 
-	$celular = new CelularesView();
+	$celular = new CelularesModel();
 
-		$celular->showCelulares($celulares);
+	
+
+
  ?>

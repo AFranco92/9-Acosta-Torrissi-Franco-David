@@ -2,8 +2,13 @@
   define('ACTION', 0);
   define('VALOR1', 1);
   define('VALOR2', 2);
-  include_once 'config/ConfigApp.php';
+  
   include_once 'test.php';
+  include_once 'controller/CelularesController.php';
+  include_once 'config/ConfigApp.php';
+
+  $controllerCelular = new CelularesController();
+  
   function parseURL($url){
     $urlExploded = explode('/', $url);
     $arrayReturn[ConfigApp::$ACTION] = $urlExploded[ACTION];
@@ -17,10 +22,10 @@
           $params = $urlData[ConfigApp::$PARAMS];
           $metodo = ConfigApp::$ACTIONS[$action];
           if(isset($params) &&  $params != null){
-            echo $metodo($params);
+            echo $controllerCelular->$metodo($params);
           }
           else{
-            echo $metodo();
+            echo $controllerCelular->$metodo();
           }
       }
   }

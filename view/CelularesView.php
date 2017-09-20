@@ -31,6 +31,7 @@
 			$this->smarty->assign('modelo', $modelo);
 			$this->smarty->assign('caracteristicas', $caracteristicas);
 			$this->smarty->assign('precio', $precio);
+			$this->smarty->assign('id_marca', $id_marca);
 		}
 	}
  ?>

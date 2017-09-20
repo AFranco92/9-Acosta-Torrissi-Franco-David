@@ -1,7 +1,7 @@
 <?php 
 	include_once 'model/CelularesModel.php';
 	include_once 'view/CelularesView.php';
-	define('HOME', 'http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']).'/');
+	define('HOME', 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']).'/');
 
 	class CelularesController {
 
@@ -19,11 +19,11 @@
 		}
 
 		public function create() {
-			$this->view->ShowCreateCelulares();
+			$this->view->showCreateCelulares();
 		}
 
 		public function edit() {
-			/*a completar*/
+			$this->model->updateCelular();
 		}
 
 		public function store() {
@@ -31,7 +31,8 @@
 			$modelo = $_POST['modelo'];
 			$caracteristicas = $_POST['caracteristicas'];
 			$precio = $_POST['precio'];
-			if (isset($_POST[$marca]) && !empty ($_POST[$marca])) {
+			$id_marca = $_POST['id_marca'];
+			if (isset($_POST['marca'], $_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca']) && !empty($_POST['marca'])) {
 				$this->model->setCelular($marca, $modelo, $caracteristicas, $precio, $id_marca);
 				header('Location: '.HOME);
 			}

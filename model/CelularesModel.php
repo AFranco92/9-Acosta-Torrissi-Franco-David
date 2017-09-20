@@ -4,14 +4,13 @@
 		private $db;
 
 		function __construct() {
-			$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8','root','');
+			$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8', 'root', '');
 		}
 
 		function getCelulares() {
 			$sentencia = $this->db->prepare('SELECT * FROM Celular');
 			$sentencia->execute();
-			$celulares = $sentencia->fetchAll(PDO::FETCH_ASSOC);
-			return $celulares;
+			return $sentencia->fetchAll(PDO::FETCH_ASSOC);
 		}
 
 		function setCelular($marca, $modelo, $caracteristicas, $precio, $id_marca) {
@@ -20,7 +19,7 @@
 		}
 
 		function updateCelular(/*parametros*/) {
-			$sentencia = $this->db->prepare('UPDATE /*parametros*/./*parametros*/ SET /*parametros*/ = ? WHERE /*parametros*/');
+			$sentencia = $this->db->prepare('UPDATE /*parametros*/./*parametros*/ SET /*parametros*/ = ? WHERE /*parametros*/');	
 			$sentencia->execute([/*parametros*/]);
 		}
 
