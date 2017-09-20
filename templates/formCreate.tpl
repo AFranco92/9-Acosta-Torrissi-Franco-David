@@ -7,7 +7,7 @@
       	<form action="setCelular" method="POST" class="create form-signin">
         	<input type="text" name="marca" id="inputText" class="form-control" placeholder="Marca" required autofocus>
         	<input type="text" name="modelo" id="inputText" class="form-control" placeholder="Modelo" required autofocus>
-        	<input type="textarea" name="caracteristicas" id="inputText" class="form-control" placeholder="Características" required autofocus>
+          <textarea name="caracteristicas" id="inputText" class="form-control" placeholder="Características" required autofocus></textarea>
         	<input type="number" name="precio" id="inputNumber" class="form-control" placeholder="Precio" required autofocus>
         	<input type="number" name="id_marca" id="inputNumber" class="form-control" placeholder="id_categoria" required autofocus>
         	<button class="btn btn-lg btn-primary btn-block" type="submit">Cargar</button>
