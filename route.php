@@ -3,7 +3,7 @@
   define('VALOR1', 1);
   define('VALOR2', 2);
   include_once 'config/ConfigApp.php';
-  include_once 'login.php';
+  include_once 'test.php';
   function parseURL($url){
     $urlExploded = explode('/', $url);
     $arrayReturn[ConfigApp::$ACTION] = $urlExploded[ACTION];

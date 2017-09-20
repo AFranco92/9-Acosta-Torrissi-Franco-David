@@ -27,14 +27,16 @@
 		}
 
 		public function store() {
-			/*parametro*/ = $_POST[/*parametro*/];
-			/*parametro*/ = $_POST[/*parametro*/];
-			if (isset($_POST[/*parametro*/]) && !empty ($_POST[/*parametro*/])) {
-				$this->model->setCelular(/*parametros*/);
+			$marca = $_POST['marca'];
+			$modelo = $_POST['modelo'];
+			$caracteristicas = $_POST['caracteristicas'];
+			$precio = $_POST['precio'];
+			if (isset($_POST[$marca]) && !empty ($_POST[$marca])) {
+				$this->model->setCelular($marca, $modelo, $caracteristicas, $precio, $id_marca);
 				header('Location: '.HOME);
 			}
 			else {
-			$this->view->showErrorCreate("El campo nombre es requerido", /*parametros*/);
+			$this->view->showErrorCreate("El campo marca es requerido", $marca, $modelo, $caracteristicas, $precio, $id_marca);
 			}
 		}
 
