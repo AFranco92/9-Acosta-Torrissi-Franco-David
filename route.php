@@ -1,31 +1,34 @@
 <?php
   define('ACTION', 0);
-  define('VALOR1', 1);
-  define('VALOR2', 2);
+  define('PARAMS', 1);
   
-  include_once 'test.php';
-  include_once 'controller/CelularesController.php';
   include_once 'config/ConfigApp.php';
-
-  $controllerCelular = new CelularesController();
+  include_once 'model/Model.php';
+  include_once 'view/View.php';
+  include_once 'controller/Controller.php';
+  include_once 'controller/CelularesController.php';
+  include_once 'controller/CategoriasController.php';
   
   function parseURL($url){
     $urlExploded = explode('/', $url);
     $arrayReturn[ConfigApp::$ACTION] = $urlExploded[ACTION];
-    $arrayReturn[ConfigApp::$PARAMS] = isset($urlExploded[VALOR1]) ? array_slice($urlExploded,1) : null;
+    $arrayReturn[ConfigApp::$PARAMS] = isset($urlExploded[PARAMS]) ? array_slice($urlExploded,1) : null;
     return $arrayReturn;
   }
+
   if(isset($_GET['action'])){
     $urlData = parseURL($_GET['action']);
     $action = $urlData[ConfigApp::$ACTION];
       if(array_key_exists($action,ConfigApp::$ACTIONS)){
           $params = $urlData[ConfigApp::$PARAMS];
-          $metodo = ConfigApp::$ACTIONS[$action];
+          $action = explode('#',ConfigApp::$ACTIONS[$action]);
+          $controller =  new $action[0]();
+          $metodo = $action[1];
           if(isset($params) &&  $params != null){
-            echo $controllerCelular->$metodo($params);
+            echo $controller->$metodo($params);
           }
           else{
-            echo $controllerCelular->$metodo();
+            echo $controller->$metodo();
           }
       }
   }

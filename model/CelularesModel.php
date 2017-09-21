@@ -1,11 +1,5 @@
 <?php 
-	class CelularesModel {
-
-		private $db;
-
-		function __construct() {
-			$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8', 'root', '');
-		}
+	class CelularesModel extends Model {
 
 		function getCelulares() {
 			$sentencia = $this->db->prepare('SELECT * FROM Celular');

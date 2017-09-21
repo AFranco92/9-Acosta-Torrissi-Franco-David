@@ -1,12 +1,8 @@
 <?php 
 	include_once 'model/CelularesModel.php';
 	include_once 'view/CelularesView.php';
-	define('HOME', 'http://'.$_SERVER['SERVER_NAME'] . dirname($_SERVER['PHP_SELF']).'/');
 
-	class CelularesController {
-
-		private $model;
-		private $view;
+	class CelularesController extends Controller {
 
 		function __construct() {
 			$this->model = new CelularesModel();

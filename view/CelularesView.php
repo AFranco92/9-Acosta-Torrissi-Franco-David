@@ -1,14 +1,6 @@
 <?php
-	include_once 'libs/Smarty.class.php';
 
-	class CelularesView {
-
-		private $smarty;
-
-		function __construct() {
-			$this->smarty = new Smarty();
-			$this->smarty->assign('titulo', 'Celulares');
-		}
+	class CelularesView extends View {
 
 		function showCelulares($celulares) {
 			$this->smarty->assign('celulares', $celulares);
