@@ -6,11 +6,11 @@
     <thead>
       <tr>
         <th>id_celular</th>
-        <th>Marca</th>
         <th>Modelo</th>
         <th>Características</th>
         <th>Precio</th>
         <th>id_marca</th>
+        <th><a href="addCelular">[+]</a></th>
       </tr>
     </thead>
     <tbody>
@@ -18,9 +18,6 @@
       <tr>
         <td>
           {$celular['id_celular']}
-        </td>
-        <td>
-          {$celular['marca']}
         </td>
         <td>
           {$celular['modelo']}
@@ -35,10 +32,10 @@
           {$celular['id_marca']}
         </td>
         <td>
-          <a href="updateCelular/{$celular['id_celular']}">Editar</a>
+          <a class="boton" href="updateCelular/{$celular['id_celular']}">[Editar]</a>
         </td>
         <td>
-          <a href="deleteCelular/{$celular['id_celular']}">[X]</a>
+          <a class="boton" href="deleteCelular/{$celular['id_celular']}">[x]</a>
         </td>
       </tr>
     {/foreach}

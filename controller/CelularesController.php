@@ -7,6 +7,7 @@
 		function __construct() {
 			$this->model = new CelularesModel();
 			$this->view = new CelularesView();
+			$this->modelmarca = new MarcasModel();
 		}
 
 		public function index() {
@@ -15,7 +16,8 @@
 		}
 
 		public function create() {
-			$this->view->showCreateCelulares();
+			$marcas = $this->modelmarca->getMarcas();
+			$this->view->showCreateCelulares($marcas);
 		}
 
 		public function edit() {
@@ -23,17 +25,17 @@
 		}
 
 		public function store() {
-			$marca = $_POST['marca'];
+			$marcas = $this->modelmarca->getMarcas();
 			$modelo = $_POST['modelo'];
 			$caracteristicas = $_POST['caracteristicas'];
 			$precio = $_POST['precio'];
 			$id_marca = $_POST['id_marca'];
-			if (isset($_POST['marca'], $_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca']) && !empty($_POST['marca'])) {
-				$this->model->setCelular($marca, $modelo, $caracteristicas, $precio, $id_marca);
+			if (isset($_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca'])) {
+				$this->model->setCelular($modelo, $caracteristicas, $precio, $id_marca);
 				header('Location: '.HOME);
 			}
 			else {
-			$this->view->showErrorCreate("El campo marca es requerido", $marca, $modelo, $caracteristicas, $precio, $id_marca);
+			$this->view->showErrorCreate("Hay campos vacíos o hubo un error", $marcas, $modelo, $caracteristicas, $precio, $id_marca);
 			}
 		}
 

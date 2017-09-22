@@ -1,3 +1,12 @@
-html {
+html, th {
 	text-align: center;
+}
+th {
+	color: #2E7208;
+}
+tr {
+	color: #0A9453;
+}
+.boton {
+	font-weight: bold;
 }

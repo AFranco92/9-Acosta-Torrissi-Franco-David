@@ -7,7 +7,7 @@
   include_once 'view/View.php';
   include_once 'controller/Controller.php';
   include_once 'controller/CelularesController.php';
-  include_once 'controller/CategoriasController.php';
+  include_once 'controller/MarcasController.php';
   
   function parseURL($url){
     $urlExploded = explode('/', $url);

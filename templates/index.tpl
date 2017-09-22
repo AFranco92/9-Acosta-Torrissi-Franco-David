@@ -1,5 +1,4 @@
 {include file='header.tpl'}
-<a href="categorias">ABM Categorías</a>	|
-<a href="addCelular">Agregar celular</a>
+<a href="marcas">ABM Marcas</a>
 {include file='celulares.tpl'}
 {include file='footer.tpl'}

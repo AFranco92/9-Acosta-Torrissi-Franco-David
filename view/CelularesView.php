@@ -7,23 +7,23 @@
 			$this->smarty->display('templates/index.tpl');
 		}
 
-		function showCreateCelulares() {
-			$this->createCelularForm();
+		function showCreateCelulares($marcas) {
+			$this->createCelularForm($marcas);
 			$this->smarty->display('templates/formCreate.tpl');
 		}
 
-		function showErrorCreate($error, $marca, $modelo, $caracteristicas, $precio, $id_marca) {
-			$this->createCelularForm($marca, $modelo, $caracteristicas, $precio, $id_marca);
+		function showErrorCreate($error, $marcas, $modelo, $caracteristicas, $precio, $id_marca) {
+			$this->createCelularForm($marcas, $modelo, $caracteristicas, $precio, $id_marca);
 			$this->smarty->assign('error', $error);
 			$this->smarty->display('templates/formCreate.tpl');
 		}
 
-		private function createCelularForm($marca='', $modelo='', $caracteristicas='', $precio='', $id_marca='') {
-			$this->smarty->assign('marca', $marca);
+		private function createCelularForm($marcas, $modelo='', $caracteristicas='', $precio='', $id_marca='') {
 			$this->smarty->assign('modelo', $modelo);
 			$this->smarty->assign('caracteristicas', $caracteristicas);
 			$this->smarty->assign('precio', $precio);
 			$this->smarty->assign('id_marca', $id_marca);
+			$this->smarty->assign('marcas', $marcas);
 		}
 	}
  ?>

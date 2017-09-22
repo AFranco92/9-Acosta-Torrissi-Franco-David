@@ -7,9 +7,9 @@
 			return $sentencia->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		function setCelular($marca, $modelo, $caracteristicas, $precio, $id_marca) {
-			$sentencia = $this->db->prepare('INSERT INTO Celular(marca, modelo, caracteristicas, precio, id_marca) VALUES(?,?,?,?,?)');
-			$sentencia->execute([$marca, $modelo, $caracteristicas, $precio, $id_marca]);
+		function setCelular($modelo, $caracteristicas, $precio, $id_marca) {
+			$sentencia = $this->db->prepare('INSERT INTO Celular(modelo, caracteristicas, precio, id_marca) VALUES(?,?,?,?)');
+			$sentencia->execute([$modelo, $caracteristicas, $precio, $id_marca]);
 		}
 
 		function updateCelular(/*parametros*/) {

@@ -1,5 +1,5 @@
-<h2>Categorías</h2>
-<p>Se observan todas las categorías:</p>
+<h2>Marcas</h2>
+<p>Se observan todas las marcas:</p>
 <div class="row">
 <div class="col-md-6">          
   <table class="table table-striped">
@@ -8,25 +8,26 @@
         <th>id_marca</th>
         <th>Nombre</th>
         <th>Descripción</th>
+        <th><a href="addMarca">[+]</a></th>
       </tr>
     </thead>
     <tbody>
-      {foreach from=$categorias item=categoria}
+      {foreach from=$marcas item=marca}
       <tr>
         <td>
-          {$categoria['id_marca']}
+          {$marca['id_marca']}
         </td>
         <td>
-          {$categoria['nombre']}
+          {$marca['nombre']}
         </td>
         <td>
-          {$categoria['descripcion']}
+          {$marca['descripcion']}
         </td>
         <td>
-          <a href="updateCategoria/{$categoria['id_marca']}">Editar</a>
+          <a class="boton" href="updateMarca/{$marca['id_marca']}">[Editar]</a>
         </td>
         <td>
-          <a href="deleteCategoria/{$categoria['id_marca']}">[X]</a>
+          <a class="boton" href="deleteMarca/{$marca['id_marca']}">[x]</a>
         </td>
       </tr>
     {/foreach}
