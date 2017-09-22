@@ -7,12 +7,12 @@
       <div class="alert alert-danger" role="alert">{$error}</div>
     {/if}
       	<form action="setCelular" method="POST" class="create form-signin">
-          <select class="form-control">
+          <select name="id_marca" class="form-control">
             <option value="" selected disabled hidden>Seleccionar marca</option>
             {foreach from=$marcas item=marca}
-            <option name="id_marca" value="{$marca['id_marca']}">{$marca['nombre']}</option> 
+            <option value="{$marca['id_marca']}">{$marca['nombre']}</option> 
             {/foreach}
-          </select>
+          </select> 
         	<input type="text" name="modelo" id="inputText" class="form-control" placeholder="Modelo" required autofocus>
           <textarea name="caracteristicas" id="inputText" class="form-control" placeholder="Características" required autofocus></textarea>
         	<input type="number" name="precio" id="inputNumber" class="form-control" placeholder="Precio" required autofocus>
