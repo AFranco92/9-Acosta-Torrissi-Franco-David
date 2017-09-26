@@ -6,4 +6,5 @@
 		<title>{$titulo}</title>
 	</head>
 	<body>
+		<a href="showGuestView">Vista visitante</a>
 		<div class="container">

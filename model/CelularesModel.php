@@ -7,15 +7,15 @@
 			return $sentencia->fetchAll(PDO::FETCH_ASSOC);
 		}
 
-		function setCelular($modelo, $caracteristicas, $precio, $id_marca) {
-			$sentencia = $this->db->prepare('INSERT INTO Celular(modelo, caracteristicas, precio, id_marca) VALUES(?,?,?,?)');
-			$sentencia->execute([$modelo, $caracteristicas, $precio, $id_marca]);
+		function setCelular($modelo, $caracteristicas, $precio, $stock, $id_marca) {
+			$sentencia = $this->db->prepare('INSERT INTO Celular(modelo, caracteristicas, precio, stock, id_marca) VALUES(?,?,?,?)');
+			$sentencia->execute([$modelo, $caracteristicas, $precio, $stock, $id_marca]);
 		}
 
-		function updateCelular(/*parametros*/) {
-			$sentencia = $this->db->prepare('UPDATE /*parametros*/./*parametros*/ SET /*parametros*/ = ? WHERE /*parametros*/');	
-			$sentencia->execute([/*parametros*/]);
-		}
+		function setNoStock($id_celular) {
+    		$sentencia = $this->db->prepare('UPDATE Celular SET stock = 1 WHERE id_celular = ?');
+    		$sentencia->execute([$id_celular]);
+  		}
 
 		function deleteCelular($id_celular) {
 			$sentencia = $this->db->prepare('DELETE FROM Celular WHERE id_celular = ?');

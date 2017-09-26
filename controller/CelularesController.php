@@ -15,20 +15,29 @@
 			$this->view->showCelulares($celulares);
 		}
 
+		public function indexcelularesandmarcas() {
+			$celulares = $this->model->getCelulares();
+			$marcas = $this->modelmarca->getMarcas();
+			$this->view->showCelularesAndMarcas($celulares, $marcas);
+		}
+
 		public function create() {
 			$marcas = $this->modelmarca->getMarcas();
 			$this->view->showCreateCelulares($marcas);
 		}
 
-		public function edit() {
-			$this->model->updateCelular();
-		}
+  		public function noStock($params) {
+    		$id_celular = $params[0];
+    		$this->model->setNoStock($id_celular);
+    		header('Location: '.HOME);
+  		}
 
 		public function store() {
 			$marcas = $this->modelmarca->getMarcas();
 			$modelo = $_POST['modelo'];
 			$caracteristicas = $_POST['caracteristicas'];
 			$precio = $_POST['precio'];
+			$stock = isset($_POST['stock']) ? $_POST['stock'] : 0;
 			$id_marca = $_POST['id_marca'];
 			if (isset($_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca'])) {
 				$this->model->setCelular($modelo, $caracteristicas, $precio, $id_marca);
