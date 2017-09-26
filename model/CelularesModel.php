@@ -8,7 +8,7 @@
 		}
 
 		function setCelular($modelo, $caracteristicas, $precio, $stock, $id_marca) {
-			$sentencia = $this->db->prepare('INSERT INTO Celular(modelo, caracteristicas, precio, stock, id_marca) VALUES(?,?,?,?)');
+			$sentencia = $this->db->prepare('INSERT INTO Celular(modelo, caracteristicas, precio, stock, id_marca) VALUES(?,?,?,?,?)');
 			$sentencia->execute([$modelo, $caracteristicas, $precio, $stock, $id_marca]);
 		}
 

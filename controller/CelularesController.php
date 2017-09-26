@@ -40,11 +40,11 @@
 			$stock = isset($_POST['stock']) ? $_POST['stock'] : 0;
 			$id_marca = $_POST['id_marca'];
 			if (isset($_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca'])) {
-				$this->model->setCelular($modelo, $caracteristicas, $precio, $id_marca);
+				$this->model->setCelular($modelo, $caracteristicas, $precio, $stock, $id_marca);
 				header('Location: '.HOME);
 			}
 			else {
-			$this->view->showErrorCreate("Hay campos vacíos o hubo un error", $marcas, $modelo, $caracteristicas, $precio, $id_marca);
+			$this->view->showErrorCreate("Hay campos vacíos o hubo un error", $marcas, $modelo, $caracteristicas, $precio, $stock, $id_marca);
 			}
 		}
 
