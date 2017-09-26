@@ -4,7 +4,12 @@
 		protected $db;
 
 		function __construct() {
-			$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8', 'root', '');
+			try {
+				$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8', 'root', '');
+			}
+			catch (Exception $e) {
+				echo 'Hubo un problema con la conexión a la base de datos', $e->getMessage(), "\n";
+			}
 		}
 	}
  ?>
