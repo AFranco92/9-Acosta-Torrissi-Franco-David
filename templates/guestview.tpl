@@ -1,6 +1,5 @@
-{include file = 'header.tpl'}
-<a href="home">ABM Celulares</a> |
-<a href="marcas">ABM Marcas</a>
+{include file='header.tpl'}
+{include file='nav.tpl'}
 <div class="row">
 	<div class="col-md-6">
 		{include file='templates/guestviewcelulares.tpl'}
@@ -9,4 +8,4 @@
 		{include file='templates/marcas/guestviewmarcas.tpl'}
 	</div>
 </div>
-{include file = 'footer.tpl'}
+{include file='footer.tpl'}

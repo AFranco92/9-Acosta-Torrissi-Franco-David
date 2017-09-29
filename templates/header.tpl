@@ -7,4 +7,3 @@
 	</head>
 	<body>
 		<div class="container">
-			| <a href="logout">Salir</a> |

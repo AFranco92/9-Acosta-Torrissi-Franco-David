@@ -1,6 +1,4 @@
-<h2>Marcas</h2>
-<div class="row">
-<div class="col-md-6">          
+<h2>Marcas</h2>       
   <table class="table table-striped">
     <thead>
       <tr>
@@ -21,5 +19,3 @@
     {/foreach}
   </tbody>
 </table>
-</div>
-</div>

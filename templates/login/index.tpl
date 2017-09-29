@@ -9,7 +9,7 @@
         {if !empty($error) }
             <div class="alert alert-danger" role="alert">{$error}</div>
         {/if}
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Ingresar</button>
       </form>
     </div>
 </div>

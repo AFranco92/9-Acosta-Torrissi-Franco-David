@@ -1,3 +1,4 @@
+{include file='nav.tpl'}
 <h2>Marcas</h2>
 <p>Se observan todas las marcas:</p>
 <div class="row">
