@@ -5,7 +5,7 @@
     	public static $ACTIONS = [
     	    '' => 'CelularesController#index',
     		'home' => 'CelularesController#index',
-            'showGuestView' => 'CelularesController#indexcelularesandmarcas',
+            'guestView' => 'CelularesController#indexcelularesandmarcas',
             'celulares' => 'CelularesController#index',
             'marcas' => 'MarcasController#index',
             'addMarca' => 'MarcasController#create',

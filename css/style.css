@@ -10,3 +10,16 @@ tr {
 .boton {
 	font-weight: bold;
 }
+body {
+	background: linear-gradient(to bottom, white, green);
+	background-size: 350%;
+}
+.login {
+	margin: 5%;
+}
+.titulologin {
+	color: grey;
+}
+input, button, textarea, select {
+	margin: 2%;
+}

@@ -1,20 +1,12 @@
 <?php 
 	include_once('model/LoginModel.php');
 	include_once('view/LoginView.php');
-	include_once('model/CelularesModel.php');
-	include_once('view/CelularesView.php');
-	include_once('model/MarcasModel.php');
-	include_once('view/MarcasView.php');
 
 	class LoginController extends Controller {
 
 	  	function __construct() {
 	    	$this->view = new LoginView();
 	    	$this->model = new LoginModel();
-	    	$this->marcaview = new MarcasView();
-	    	$this->marcamodel = new MarcasModel();
-	    	$this->celularview = new CelularesView();
-	    	$this->celularmodel = new CelularesModel();
 	  	}
 
 	  	public function index() {

@@ -1,5 +1,6 @@
 {include file='../header.tpl'}
-<div class="row">
+<h2 class="titulologin">Ingresar como administrador</h2>
+<div class="row login">
 	<div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
       <form action='checkUser' method="POST" class="ingreso form-signin">
         <label for="inputText" class="sr-only">Usuario</label>
