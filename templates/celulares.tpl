@@ -1,7 +1,7 @@
 <h2>{$titulo}</h2>
 <p>Se observan los celulares cargados hasta el momento:</p>
 <div class="row">
-<div class="col-md-12">          
+<div class="table-responsive col-md-12">          
   <table class="table table-striped">
     <thead>
       <tr>

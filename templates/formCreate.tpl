@@ -16,7 +16,7 @@
         	<input type="text" name="modelo" id="inputText" class="form-control" placeholder="Modelo" required autofocus>
           <textarea name="caracteristicas" id="inputText" class="form-control" placeholder="Características" required autofocus></textarea>
         	<input type="number" name="precio" id="inputNumber" class="form-control" placeholder="Precio" required autofocus>
-          Stock <input type="checkbox" id="stock" name="stock" value="1">
+          Sin stock <input type="checkbox" id="stock" name="stock" value="1">
         	<button class="btn btn-lg btn-primary btn-block" type="submit">Cargar</button>
       	</form>
     </div>

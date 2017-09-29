@@ -1,7 +1,7 @@
 <h2>Marcas</h2>
 <p>Se observan todas las marcas:</p>
 <div class="row">
-<div class="col-md-12">          
+<div class="table-responsive col-md-12">          
   <table class="table table-striped">
     <thead>
       <tr>

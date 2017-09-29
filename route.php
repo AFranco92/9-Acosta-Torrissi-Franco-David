@@ -6,8 +6,10 @@
   include_once 'model/Model.php';
   include_once 'view/View.php';
   include_once 'controller/Controller.php';
+  include_once 'controller/SecuredController.php';
   include_once 'controller/CelularesController.php';
   include_once 'controller/MarcasController.php';
+  include_once 'controller/LoginController.php';
   
   function parseURL($url){
     $urlExploded = explode('/', $url);

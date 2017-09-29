@@ -2,9 +2,10 @@
 	include_once 'model/MarcasModel.php';
 	include_once 'view/MarcasView.php';
 
-	class MarcasController extends Controller {
+	class MarcasController extends SecuredController {
 
 		function __construct() {
+			parent::__construct();
 			$this->model = new MarcasModel();
 			$this->view = new MarcasView();
 		}

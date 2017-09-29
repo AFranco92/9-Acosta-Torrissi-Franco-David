@@ -14,7 +14,10 @@
       	    'addCelular' => 'CelularesController#create',
       	    'setCelular' => 'CelularesController#store',
       	    'deleteCelular' => 'CelularesController#destroy',
-            'setNoStock' => 'CelularesController#noStock'
+            'setNoStock' => 'CelularesController#noStock',
+            'login' => 'LoginController#index',
+            'checkUser' => 'LoginController#verify',
+            'logout' => 'LoginController#destroy'
     	];
 	}
 ?>

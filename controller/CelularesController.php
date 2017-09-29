@@ -2,9 +2,10 @@
 	include_once 'model/CelularesModel.php';
 	include_once 'view/CelularesView.php';
 
-	class CelularesController extends Controller {
+	class CelularesController extends SecuredController {
 
 		function __construct() {
+			parent::__construct();
 			$this->model = new CelularesModel();
 			$this->view = new CelularesView();
 			$this->modelmarca = new MarcasModel();
