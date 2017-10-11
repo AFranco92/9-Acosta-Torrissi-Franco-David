@@ -16,10 +16,10 @@
 			$this->view->showCelulares($celulares);
 		}
 
-		public function indexcelularesandmarcas() {
-			$celulares = $this->model->getCelulares();
+		public function indexabm() {
 			$marcas = $this->modelmarca->getMarcas();
-			$this->view->showCelularesAndMarcas($celulares, $marcas);
+			$celulares = $this->model->getCelulares();
+			$this->view->showIndex($celulares, $marcas);
 		}
 
 		public function create() {
@@ -30,7 +30,7 @@
   		public function noStock($params) {
     		$id_celular = $params[0];
     		$this->model->setNoStock($id_celular);
-    		header('Location: '.HOME);
+    		header('Location: '.ABM);
   		}
 
 		public function store() {
@@ -42,7 +42,7 @@
 			$id_marca = $_POST['id_marca'];
 			if (isset($_POST['modelo'], $_POST['caracteristicas'], $_POST['precio'], $_POST['id_marca'])) {
 				$this->model->setCelular($modelo, $caracteristicas, $precio, $stock, $id_marca);
-				header('Location: '.HOME);
+				header('Location: '.ABM);
 			}
 			else {
 			$this->view->showErrorCreate("Hay campos vacíos o hubo un error", $marcas, $modelo, $caracteristicas, $precio, $stock, $id_marca);
@@ -52,7 +52,7 @@
 		public function destroy($params) {
 			$id_celular = $params[0];
 			$this->model->deleteCelular($id_celular);
-			header('Location: '.HOME);
+			header('Location: '.ABM);
 		}
 	}
  ?>

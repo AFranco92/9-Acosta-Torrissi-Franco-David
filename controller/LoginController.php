@@ -23,7 +23,7 @@
 	            	session_start();
 	            	$_SESSION['USER'] = $userName;
 	            	$_SESSION['LAST_ACTIVITY'] = time();
-	            	header('Location: '.HOME);
+	            	header('Location: '.ABM);
 	        	}
 	        	else {
 	            	$this->view->showLogin('Usuario o password incorrectos');
@@ -34,7 +34,7 @@
 	  	public function destroy() {
 	    	session_start();
 	    	session_destroy();
-	    	header('Location: '.LOGIN);
+	    	header('Location: '.HOME);
 	  	}
 	}
  ?>

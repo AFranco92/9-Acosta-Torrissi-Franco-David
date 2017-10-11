@@ -6,4 +6,3 @@
 		<title>{$titulo}</title>
 	</head>
 	<body>
-		<div class="container">

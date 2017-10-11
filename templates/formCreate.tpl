@@ -1,5 +1,3 @@
-{include file='header.tpl'}
-{include file='nav.tpl'}
 <div class="row">
 	<div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
     {if isset($error) }
@@ -16,8 +14,7 @@
           <textarea name="caracteristicas" id="inputText" class="form-control" placeholder="Características" required autofocus></textarea>
         	<input type="number" name="precio" id="inputNumber" class="form-control" placeholder="Precio" required autofocus>
           Sin stock <input type="checkbox" id="stock" name="stock" value="1">
-        	<button class="btn btn-lg btn-primary btn-block" type="submit">Cargar</button>
+        	<button class="btn btn-lg btn-primary btn-block add" type="submit">Cargar</button>
       	</form>
     </div>
 </div>
-{include file='footer.tpl'}

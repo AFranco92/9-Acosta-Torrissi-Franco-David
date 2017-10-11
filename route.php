@@ -10,6 +10,8 @@
   include_once 'controller/CelularesController.php';
   include_once 'controller/MarcasController.php';
   include_once 'controller/LoginController.php';
+  include_once 'controller/WebController.php';
+  //include_once 'controller/GuestViewController.php';
   
   function parseURL($url){
     $urlExploded = explode('/', $url);

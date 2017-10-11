@@ -3,7 +3,7 @@
 
 		function showLogin($error = '') {
 			$this->smarty->assign('error', $error);
-			$this->smarty->display('templates/login/index.tpl');
+			$this->smarty->display('templates/login/login.tpl');
 		}
 	}
  ?>

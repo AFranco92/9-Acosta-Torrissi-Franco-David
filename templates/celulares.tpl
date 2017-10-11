@@ -10,7 +10,7 @@
         <th>Características</th>
         <th>Precio</th>
         <th>id_marca</th>
-        <th><a href="addCelular">[+]</a></th>
+        <th><a class="boton addCelular" href="#">[+]</a></th>
       </tr>
     </thead>
     <tbody>
@@ -50,10 +50,10 @@
         </td>
         {/if}
         <td>
-          <a class="boton" href="setNoStock/{$celular['id_celular']}">[Sin stock]</a>
+          <a class="boton edit" href="setNoStock/{$celular['id_celular']}">[Sin stock]</a>
         </td>
         <td>
-          <a class="boton" href="deleteCelular/{$celular['id_celular']}">[x]</a>
+          <a class="boton delete" href="deleteCelular/{$celular['id_celular']}">[x]</a>
         </td>
       </tr>
     {/foreach}

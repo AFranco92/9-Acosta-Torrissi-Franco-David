@@ -1,5 +1,3 @@
-{include file='../header.tpl'}
-{include file='nav.tpl'}
 <div class="row">
 	<div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-4">
     {if isset($error) }
@@ -13,4 +11,3 @@
       	</form>
     </div>
 </div>
-{include file='../footer.tpl'}

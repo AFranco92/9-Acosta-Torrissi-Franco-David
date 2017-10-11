@@ -7,7 +7,7 @@
 			try {
 				$this->db = new PDO('mysql:host=localhost;'.'dbname=db_celulares;charset=utf8', 'root', '');
 			}
-			catch (Exception $e) {
+			catch (PDOException $e) {
 				echo 'Hubo un problema con la conexión a la base de datos', $e->getMessage(), "\n";
 			}
 		}

@@ -7,16 +7,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand cargarhome" href="#">SIERRACEL</a>
+      <a class="navbar-brand cargarhome" href="">SIERRACEL</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="guestView">Vista visitante</a></li>
-        <li><a href="home">ABM Celulares</a></li>
-        <li><a href="marcas">ABM Marcas</a></li>
+        <li><a class="abmCelulares" href="#">ABM Celulares</a></li>
+        <li><a class="abmMarcas" href="#">ABM Marcas</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="logout" class="cargarcontacto">Salir</a></li>
+        <li><a class="logout" href="logout">Salir</a></li>
       </ul>
     </div>
   </div>

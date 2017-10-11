@@ -11,7 +11,7 @@
         $_SESSION['LAST_ACTIVITY'] = time();
       }
       else {
-        header('Location: '.LOGIN);
+        header('Location: '.HOME);
         die();
       }
     }

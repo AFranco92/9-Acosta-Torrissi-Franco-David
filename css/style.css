@@ -1,4 +1,4 @@
-html, th {
+th, tr {
 	text-align: center;
 }
 th {
@@ -10,9 +10,16 @@ tr {
 .boton {
 	font-weight: bold;
 }
+.edit {
+	color: orange;
+}
+.delete {
+	color: red;
+}
 body {
 	background: linear-gradient(to bottom, white, green);
 	background-size: 350%;
+	margin: 1%;
 }
 .login {
 	margin: 5%;
@@ -22,4 +29,78 @@ body {
 }
 input, button, textarea, select {
 	margin: 2%;
+}
+.row  {
+	margin: 3%;
+}
+.col-md-4 {
+	text-align: justify-all;
+	border-color: black;
+	border-width: 20%;
+}
+img {
+	max-width: 120%;
+	padding-right: 20%;
+}
+span {
+	font-size: 200%;
+}
+
+footer {
+	background-color: #222345;
+	height: 120%;
+}
+.copyright, .telefono {
+	color: white;
+	padding-top: 0.3%;
+}
+.navbar-brand {
+	font-size: 200%;
+}
+.panel, .suscripcion {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.opinion {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+.tituloempresa {
+	font-family: monospace;
+	font-size: 600%;
+	text-align: center;
+	margin-top: 5%;
+}
+.presentacion {
+	font-family: sans-serif;
+	font-size: 200%;
+	text-align: center;
+	margin-top: 5%;
+}
+#tituloagregarcontenido {
+	margin-left: 1%;
+}
+.agregarcontenido, .table-responsive {
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.jumbotron {
+	margin-left: 3%;
+}
+#cargando {
+	text-align: center;
+}
+.btn {
+	margin: 1%;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+a:link {
+	color: black;
+}
+.list-group {
+	margin: 2%;
+	padding: 2%;
 }

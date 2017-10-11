@@ -4,13 +4,13 @@
 
 		function showCelulares($celulares) {
 			$this->smarty->assign('celulares', $celulares);
-			$this->smarty->display('templates/index.tpl');
+			$this->smarty->display('templates/celulares.tpl');
 		}
 
-		function showCelularesAndMarcas($celulares, $marcas) {
+		function showIndex($celulares, $marcas) {
 			$this->smarty->assign('celulares', $celulares);
 			$this->smarty->assign('marcas', $marcas);
-			$this->smarty->display('templates/guestview.tpl');
+			$this->smarty->display('templates/indexabm.tpl');
 		}
 
 		function showCreateCelulares($marcas) {

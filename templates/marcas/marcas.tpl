@@ -1,4 +1,3 @@
-{include file='nav.tpl'}
 <h2>Marcas</h2>
 <p>Se observan todas las marcas:</p>
 <div class="row">
@@ -9,7 +8,7 @@
         <th>id_marca</th>
         <th>Nombre</th>
         <th>Descripción</th>
-        <th><a href="addMarca">[+]</a></th>
+        <th><a class="boton addMarca" href="#">[+]</a></th>
       </tr>
     </thead>
     <tbody>
@@ -25,7 +24,7 @@
           {$marca['descripcion']}
         </td>
         <td>
-          <a class="boton" href="deleteMarca/{$marca['id_marca']}">[x]</a>
+          <a class="boton delete" href="deleteMarca/{$marca['id_marca']}">[x]</a>
         </td>
       </tr>
     {/foreach}

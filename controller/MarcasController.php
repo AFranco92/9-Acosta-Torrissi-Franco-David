@@ -29,7 +29,7 @@
 			$descripcion = $_POST['descripcion'];
 			if (isset($_POST['id_marca'], $_POST['nombre'], $_POST['descripcion']) && !empty($_POST['id_marca'])) {
 				$this->model->setMarca($id_marca, $nombre, $descripcion);
-				header('Location: '.HOME.'/marcas');
+				header('Location: '.ABM);
 			}
 			else {
 			$this->view->showErrorCreateMarca("El campo id_marca es requerido", $id_marca, $nombre, $descripcion);
@@ -39,7 +39,7 @@
 		public function destroy($params) {
 			$id_marca = $params[0];
 			$this->model->deleteMarca($id_marca);
-			header('Location: '.HOME.'/marcas');
+			header('Location: '.ABM);
 		}
 	}
  ?>
