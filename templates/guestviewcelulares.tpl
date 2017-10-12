@@ -1,4 +1,4 @@
-<h2>{$titulo}</h2>        
+<h2>{$titulo}</h2>      
   <table class="table table-striped">
     <thead>
       <tr>
@@ -18,7 +18,7 @@
           {$celular['caracteristicas']}
         </td>
         <td>
-          {$celular['precio']}</s><p class="stock">Sin stock</p>
+          {$celular['precio']}<p class="stock">Sin stock</p>
         </td>
         {else}
         <td>
