@@ -18,26 +18,26 @@
       <tr>
         {if $celular['stock']}
         <td>
-          <s>{$celular['id_celular']}</s>
+          {$celular['id_celular']}
         </td>
         <td>
-          <s>{$celular['modelo']}</s>
+          <strong>{$celular['modelo']}</strong>
         </td>
         <td>
-          <s>{$celular['caracteristicas']}</s>
+          {$celular['caracteristicas']}
         </td>
         <td>
-          <s>{$celular['precio']}</s>
+          {$celular['precio']}<p class="stock">Sin stock</p>
         </td>
         <td>
-          <s>{$celular['id_marca']}</s>
+          {$celular['id_marca']}
         </td>
         {else}
         <td>
           {$celular['id_celular']}
         </td>
         <td>
-          {$celular['modelo']}
+          <strong>{$celular['modelo']}</strong>
         </td>
         <td>
           {$celular['caracteristicas']}

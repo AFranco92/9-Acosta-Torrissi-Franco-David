@@ -10,7 +10,7 @@
       {foreach from=$marcas item=marca}
       <tr>
         <td>
-          {$marca['nombre']}
+          <strong>{$marca['nombre']}</strong>
         </td>
         <td>
           {$marca['descripcion']}

@@ -130,3 +130,7 @@ a:link {
 .twitter, .insta {
 	margin-left: 10%;
 }
+.stock {
+	font-weight: bold;
+	color: red;
+}

@@ -12,17 +12,17 @@
       <tr>
         {if $celular['stock']}
         <td>
-          <s>{$celular['modelo']}</s>
+          <strong>{$celular['modelo']}</strong>
         </td>
         <td>
-          <s>{$celular['caracteristicas']}</s>
+          {$celular['caracteristicas']}
         </td>
         <td>
-          <s>{$celular['precio']}</s>
+          {$celular['precio']}</s><p class="stock">Sin stock</p>
         </td>
         {else}
         <td>
-          {$celular['modelo']}
+          <strong>{$celular['modelo']}</strong>
         </td>
         <td>
           {$celular['caracteristicas']}

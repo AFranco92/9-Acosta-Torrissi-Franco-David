@@ -15,7 +15,7 @@
       {foreach from=$marcas item=marca}
       <tr>
         <td>
-          {$marca['id_marca']}
+          <strong>{$marca['id_marca']}</strong>
         </td>
         <td>
           {$marca['nombre']}
