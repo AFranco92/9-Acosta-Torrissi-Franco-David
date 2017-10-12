@@ -17,7 +17,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <a class="navbar-brand cargarhome" href="#">SIERRACEL</a>
+			      <a class="navbar-brand cargarhome" href="#">SIᕮᖇᖇᗩᑕᕮᒪ</a>
 			    </div>
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
@@ -36,12 +36,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="contenedor">
-					<h1 class="tituloempresa">SIERRACEL</h1>
+					<h1 class="tituloempresa">SIᕮᖇᖇᗩᑕᕮᒪ</h1>
 					<section class="presentacion">
 						<p>¿Querés sentirte seguro al comprar un celular?</p>
 						<p>¿Buscás un celular con una garantía de 3 años?</p>
 						<p>¿No encontrás un servicio post-venta personalizado y completo?</p>
-						<p>Acá encontrarás todo eso y más... Te invitamos a recorrer la web para que te informes sobre los productos de Sierracel, así como también las opiniones de la gente que nos eligió y nos elige.</p>
+						<p>Acá encontrarás todo eso y más... Te invitamos a recorrer la web para que te informes sobre los productos de SIᕮᖇᖇᗩᑕᕮᒪ, así como también las opiniones de la gente que nos eligió y nos elige.</p>
 					</section>
 				</div>
 			</div>

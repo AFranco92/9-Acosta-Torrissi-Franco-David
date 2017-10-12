@@ -38,13 +38,13 @@
     </section>
   </div>
 </div>
-<div class="opinion">
-	<h3>Dejanos tu opinión</h3>
-	<div class="form-group">
-    <input type="name" class="form-control" id="nombrecliente" placeholder="Nombre">
+<div class="row">
+  <div class="opinion col-md-4">
+  	<h3 class="guardarcomentario">Dejanos tu opinión</h3>
+  	<form>
+      <input type="name" name="nombrecliente" class="form-control nombrecliente" placeholder="Nombre">
+      <textarea name="comentariocliente" class="form-control comentariocliente" rows="3" placeholder="Comentario"></textarea>
+      <button type="submit" class="btn btn-primary guardarcomentario">Enviar</button>
+    </form>
   </div>
-	<div class="form-group">
-    <textarea class="form-control" id="comentariocliente" rows="3" placeholder="Comentario"></textarea>
-  </div>
-  		<button type="submit" class="btn btn-primary" id="guardarComentario">Enviar</button>
 </div>

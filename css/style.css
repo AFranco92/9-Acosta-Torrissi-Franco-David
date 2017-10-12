@@ -10,12 +10,6 @@ tr {
 .boton {
 	font-weight: bold;
 }
-.edit {
-	color: orange;
-}
-.delete {
-	color: red;
-}
 body {
 	background: linear-gradient(to bottom, white, green);
 	background-size: 350%;
@@ -86,12 +80,13 @@ footer {
 }
 .jumbotron {
 	margin-left: 3%;
+	border-radius: 5%;
 }
 #cargando {
 	text-align: center;
 }
 .btn {
-	margin: 1%;
+	margin: 2%;
 }
 a:hover {
 	text-decoration: none;
@@ -103,4 +98,35 @@ a:link {
 .list-group {
 	margin: 2%;
 	padding: 2%;
+}
+.guardarcomentario, .suscribirse {
+	margin-left: 2%;
+}
+.navegador {
+	background-color: #1A5A09;
+}
+.titulologin {
+	margin-left: 35%;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:33px !important; 
+    padding-bottom:0 !important;
+    height: 85px;
+}
+.navbar {
+	min-height:60px !important;
+}
+.fb {
+	width: 86%;
+	margin-left: 4%;
+}
+.twitter {
+	width: 74%;
+}
+.insta {
+	width: 74%;
+	margin-top: 7%;
+}
+.twitter, .insta {
+	margin-left: 10%;
 }
